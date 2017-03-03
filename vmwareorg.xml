@@ -12,11 +12,18 @@
            sync-j="4"
            revision="master" />
 
+  <!-- Start Base Repos -->
   <!-- user interface (django webapp) -->
-  <project path="ui" name="chaperone-ui" groups="chaperone" remote="vmwareorg"/>
-
+  <project path="ui" name="chaperone-ui" groups="chaperone,base" remote="vmwareorg"/>
   <!-- playbooks -->
-  <project path="ansible/playbooks" name="ansible-playbooks-chaperone" groups="playbooks,sdlc,chaperone" remote="vmwareorg"/>
+  <project path="ansible/playbooks" name="ansible-playbooks-chaperone" groups="playbooks,sdlc,chaperone,base" remote="vmwareorg"/>
+  <!-- Roles -->
+  <project path="ansible/roles/chaperone" name="ansible-role-chaperone" groups="roles,chaperone,base" remote="vmwareorg"/>
+  <project path="ansible/roles/ovftool" name="ansible-role-ovftool" groups="roles,chaperone,base" remote="vmwareorg"/>
+  <project path="ansible/roles/pip" name="ansible-role-pip" groups="sdlc,roles,chaperone,base" remote="vmwareorg"/>
+  <project path="ansible/roles/sshkeys" name="ansible-role-sshkeys" groups="sdlc,roles,chaperone,base" remote="vmwareorg"/>
+  <project path="ansible/roles/sudo" name="ansible-role-sudo" groups="sdlc,roles,chaperone,base" remote="vmwareorg"/>
+  <!-- End Base Repos -->
 
   <!-- python modules -->
   <project path="ansible/modules/extras-gpl3" name="ansible-modules-extras-gpl3" groups="modules,chaperone" remote="vmwareorg">
@@ -95,10 +102,8 @@
   <project path="ansible/roles/haproxy" name="ansible-role-haproxy" groups="sdlc" remote="vmwareorg" />
 
   <!-- general -->
-  <project path="ansible/roles/ansible" name="ansible-role-ansible" groups="sdlc,roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/assets" name="ansible-role-assets" groups="roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/autodeploy" name="ansible-role-autodeploy" groups="roles,chaperone" remote="vmwareorg"/>
-  <project path="ansible/roles/chaperone" name="ansible-role-chaperone" groups="roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/dnsmasq" name="ansible-role-dnsmasq" groups="roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/docker" name="ansible-role-docker" groups="roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/iptables" name="ansible-role-iptables" groups="roles,chaperone" remote="vmwareorg"/>
@@ -110,22 +115,15 @@
   <project path="ansible/roles/net" name="ansible-role-net" groups="roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/nfs" name="ansible-role-nfs" groups="roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/nsx" name="ansible-role-nsx" groups="roles,chaperone" remote="vmwareorg"/>
-  <project path="ansible/roles/ovftool" name="ansible-role-ovftool" groups="roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/photon" name="ansible-role-photon" groups="sdlc,roles,chaperone" remote="vmwareorg"/>
-  <project path="ansible/roles/pip" name="ansible-role-pip" groups="sdlc,roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/registrator" name="ansible-role-registrator" groups="sdlc,roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/repo" name="ansible-role-repo" groups="sdlc,roles,chaperone" remote="vmwareorg"/>
-  <project path="ansible/roles/sshkeys" name="ansible-role-sshkeys" groups="sdlc,roles,chaperone" remote="vmwareorg"/>
-  <project path="ansible/roles/sudo" name="ansible-role-sudo" groups="sdlc,roles,chaperone" remote="vmwareorg"/>
-  <project path="ansible/roles/vcenter" name="ansible-role-vcenter" groups="roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/vcsa" name="ansible-role-vcsa" groups="roles,chaperone" remote="vmwareorg"/>
-  <project path="ansible/roles/vio" name="ansible-role-vio" groups="roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/vrops" name="ansible-role-vrops" groups="roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/vra" name="ansible-role-vra" groups="roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/vrli" name="ansible-role-vrli" groups="roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/vrb" name="ansible-role-vrb" groups="roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/vrpt" name="ansible-role-vrpt" groups="roles,chaperone" remote="vmwareorg"/>
-
   <!-- container images -->
   <project path="containers/docker/chaperone" name="docker-chaperone" groups="chaperone,docker,sdlc" remote="vmwareorg"/>
   <project path="containers/docker/collectd" name="docker-collectd" groups="chaperone,docker" remote="vmwareorg"/>

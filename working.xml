@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Working Forked Repo -->
+  <remote  name="jdatxgithub"
+           fetch="https://github.com/jdatx"/>
+  <!-- Forked repos currently working on -->
+  <!-- Roles -->
+  <project path="ansible/roles/vio" name="ansible-role-vio" groups="roles,chaperone,working" remote="jdatxgithub"/>
+  <project path="ansible/roles/vcenter" name="ansible-role-vcenter" groups="roles,chaperone,working" remote="jdatxgithub"/>
+  <project path="ansible/roles/ansible" name="ansible-role-ansible" groups="sdlc,roles,chaperone,base,working" remote="jdatxgithub"/>
+  <!-- Modules -->
+  <!-- Containers -->
+  <project path="containers/vagrant" name="vagrant-chaperone" groups="chaperone,docker,sdlc,working" remote="jdatxgithub"/>
+</manifest>
