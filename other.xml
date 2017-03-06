@@ -8,7 +8,6 @@
   <project path="ansible/roles/hosts" name="ajsalminen/ansible-role-hosts.git" groups="sdlc,roles,chaperone,base" remote="github"/>
   <project path="ansible/roles/apache" name="tomhite/ansible-role-apache.git" groups="roles,chaperone,base" remote="github"/>
 
-
   <!-- python modules -->
   <project path="ansible/modules/vsphere" name="ViaSat/ansible-vsphere.git" groups="modules,chaperone" remote="github">
     <copyfile src="vsphere" dest="ansible/library/vsphere" />

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Github remote -->
+  <remote  name="github"
+           fetch="https://github.com" />
+
+  <!-- Github vmware Organization -->
+  <remote  name="vmwareorg"
+           fetch="https://github.com/vmware"
+           review="gerrit.eng.vmware.com:8080" />
+
+  <!-- Defaults for repo -->
+  <default remote="vmwareorg"
+           sync-c="true"
+           sync-j="4"
+           revision="master" />
+
+  <!-- user interface (django webapp) -->
+  <project path="ui" name="chaperone-ui" groups="base" remote="vmwareorg"/>
+
+  <!-- playbooks -->
+  <project path="ansible/playbooks" name="ansible-playbooks-chaperone" groups="base" remote="vmwareorg"/>
+
+  <!-- Roles -->
+  <project path="ansible/roles/chaperone" name="ansible-role-chaperone" groups="base" remote="vmwareorg"/>
+  <project path="ansible/roles/ovftool" name="ansible-role-ovftool" groups="base" remote="vmwareorg"/>
+  <project path="ansible/roles/pip" name="ansible-role-pip" groups="base" remote="vmwareorg"/>
+  <project path="ansible/roles/sshkeys" name="ansible-role-sshkeys" groups="base" remote="vmwareorg"/>
+  <project path="ansible/roles/sudo" name="ansible-role-sudo" groups="base" remote="vmwareorg"/>
+  <project path="ansible/roles/hosts" name="ajsalminen/ansible-role-hosts.git" groups="base" remote="github"/>
+  <project path="ansible/roles/apache" name="tomhite/ansible-role-apache.git" groups="base" remote="github"/>
+
+  <project path="ansible/roles/nsx/files" name="nsxraml.git" groups="modules,chaperone" remote="vmwareorg" >
+  </project>
+
+
+</manifest>
