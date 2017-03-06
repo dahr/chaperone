@@ -17,7 +17,6 @@
   <!-- playbooks -->
   <project path="ansible/playbooks" name="ansible-playbooks-chaperone" groups="playbooks,sdlc,chaperone,base" remote="vmwareorg"/>
   <!-- Roles -->
-  <project path="ansible/roles/chaperone" name="ansible-role-chaperone" groups="roles,chaperone,base" remote="vmwareorg"/>
   <project path="ansible/roles/ovftool" name="ansible-role-ovftool" groups="roles,chaperone,base" remote="vmwareorg"/>
   <project path="ansible/roles/pip" name="ansible-role-pip" groups="sdlc,roles,chaperone,base" remote="vmwareorg"/>
   <project path="ansible/roles/sshkeys" name="ansible-role-sshkeys" groups="sdlc,roles,chaperone,base" remote="vmwareorg"/>

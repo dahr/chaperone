@@ -8,6 +8,7 @@
   <project path="ansible/roles/vio" name="ansible-role-vio" groups="dev" remote="jdatxgithub"/>
   <project path="ansible/roles/vcenter" name="ansible-role-vcenter" groups="dev" remote="jdatxgithub"/>
   <project path="ansible/roles/ansible" name="ansible-role-ansible" groups="dev" remote="jdatxgithub"/>
+  <project path="ansible/roles/chaperone" name="ansible-role-chaperone" groups="dev" remote="jdatxgithub"/>
   <!-- Modules -->
   <!-- Containers -->
   <project path="containers/vagrant" name="vagrant-chaperone" groups="dev" remote="jdatxgithub"/>
