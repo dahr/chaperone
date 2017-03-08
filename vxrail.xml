@@ -12,7 +12,7 @@
   <project path="ansible/roles/vcenter" name="ansible-role-vcenter" groups="dev" remote="vxrailorg"/>
   <project path="ansible/roles/ansible" name="ansible-role-ansible" groups="dev" remote="vxrailorg"/>
   <project path="ansible/roles/chaperone" name="ansible-role-chaperone" groups="dev" remote="vxrailorg"/>
-  <project path="ansible/roles/nsx" name="ansible-role-nsx" groups="roles,chaperone" remote="vxrailorg"/>
+  <project path="ansible/roles/nsx" name="ansible-role-nsx" groups="dev" remote="vxrailorg"/>
 
   <!-- Modules Chaperone -->
   <project path="ansible/modules/chaperone" name="ansible-module-chaperone" groups="modules,dev" remote="vxrailorg">
