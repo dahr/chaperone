@@ -13,7 +13,7 @@
            revision="master" />
 
   <!-- user interface (django webapp) -->
-  <project path="ui" name="chaperone-ui" groups="chaperone" remote="vmwareorg"/>
+  <project path="ui" name="chaperone-ui" groups="chaperone,base" remote="vmwareorg"/>
 
   <!-- playbooks -->
   <project path="ansible/playbooks" name="ansible-playbooks-chaperone" groups="playbooks,sdlc,chaperone" remote="vmwareorg"/>
@@ -112,11 +112,11 @@
   <project path="ansible/roles/nsx" name="ansible-role-nsx" groups="roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/ovftool" name="ansible-role-ovftool" groups="roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/photon" name="ansible-role-photon" groups="sdlc,roles,chaperone" remote="vmwareorg"/>
-  <project path="ansible/roles/pip" name="ansible-role-pip" groups="sdlc,roles,chaperone" remote="vmwareorg"/>
+  <project path="ansible/roles/pip" name="ansible-role-pip" groups="sdlc,roles,chaperone,base" remote="vmwareorg"/>
   <project path="ansible/roles/registrator" name="ansible-role-registrator" groups="sdlc,roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/repo" name="ansible-role-repo" groups="sdlc,roles,chaperone" remote="vmwareorg"/>
-  <project path="ansible/roles/sshkeys" name="ansible-role-sshkeys" groups="sdlc,roles,chaperone" remote="vmwareorg"/>
-  <project path="ansible/roles/sudo" name="ansible-role-sudo" groups="sdlc,roles,chaperone" remote="vmwareorg"/>
+  <project path="ansible/roles/sshkeys" name="ansible-role-sshkeys" groups="sdlc,roles,chaperone,base" remote="vmwareorg"/>
+  <project path="ansible/roles/sudo" name="ansible-role-sudo" groups="sdlc,roles,chaperone,base" remote="vmwareorg"/>
   <project path="ansible/roles/vcenter" name="ansible-role-vcenter" groups="roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/vcsa" name="ansible-role-vcsa" groups="roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/vio" name="ansible-role-vio" groups="roles,chaperone" remote="vmwareorg"/>

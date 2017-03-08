@@ -5,6 +5,9 @@
   <remote  name="vxrailorg"
            fetch="https://github.com/jdatx" />
 
+  <remove-project path="ansible/playbooks" name="ansible-playbooks-chaperone" groups="playbooks,sdlc,chaperone" remote="vmwareorg"/>
+  <project path="ansible/playbooks" name="ansible-playbooks-chaperone" groups="dev" remote="vxrailorg"/>
+
   <remove-project path="ansible/roles/ansible" name="ansible-role-ansible" groups="sdlc,roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/ansible" name="ansible-role-ansible" groups="dev" remote="vxrailorg"/>
 
@@ -92,6 +95,8 @@
   <project path="ansible/modules/chaperone" name="ansible-module-chaperone" groups="dev" remote="vxrailorg">
     <copyfile src="vcenter_query.py" dest="ansible/library/vcenter_query.py" />
   </project>
+
+  <project path="containers/vagrant" name="vagrant-chaperone" groups="dev,vagrant" remote="vxrailorg"/>
 
 
 </manifest>
