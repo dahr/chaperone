@@ -80,10 +80,10 @@
     <copyfile src="os_create_user.py" dest="ansible/library/os_create_user.py" />
     <copyfile src="os_create_project.py" dest="ansible/library/os_create_project.py" />
     <copyfile src="nsx_vds_id.py" dest="ansible/library/nsx_vds_id.py" />
-    <copyfile src="vcenter_add_lag_vds.py.py" dest="ansible/library/vcenter_add_lag_vds.py.py" />
-    <copyfile src="vcenter_config_host_vds.py.py" dest="ansible/library/vcenter_config_host_vds.py.py" />
-    <copyfile src="vio_cluster_deploy.py.py" dest="ansible/library/vio_cluster_deploy.py.py" />
-    <copyfile src="vio_unregister_extension.py.py" dest="ansible/library/vio_unregister_extension.py.py" />
+    <copyfile src="vcenter_add_lag_vds.py" dest="ansible/library/vcenter_add_lag_vds.py" />
+    <copyfile src="vcenter_config_host_vds.py" dest="ansible/library/vcenter_config_host_vds.py" />
+    <copyfile src="vio_cluster_deploy.py" dest="ansible/library/vio_cluster_deploy.py" />
+    <copyfile src="vio_unregister_extension.py" dest="ansible/library/vio_unregister_extension.py" />
   </project>
 
   <!-- Containers -->
