@@ -2,5 +2,5 @@
 <manifest>
   <include name="vmwareorg.xml"/>
   <include name="other.xml"/>
-  <include name="working.xml"/>
+  <include name="vxrail.xml"/>
 </manifest>
