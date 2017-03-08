@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- Github vmware Organization -->
-  <remote  name="vxrailorg"
-           fetch="https://github.com/jdatx" />
-
   <remove-project path="ansible/playbooks" name="ansible-playbooks-chaperone" groups="playbooks,sdlc,chaperone" remote="vmwareorg" />
   <project path="ansible/playbooks" name="ansible-playbooks-chaperone" groups="dev" remote="vxrailorg"/>
 

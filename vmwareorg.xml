@@ -12,6 +12,9 @@
            sync-j="4"
            revision="master" />
 
+  <remote  name="vxrailorg"
+           fetch="https://github.com/jdatx" />
+
   <!-- user interface (django webapp) -->
   <project path="ui" name="chaperone-ui" groups="chaperone,base" remote="vmwareorg"/>
 
