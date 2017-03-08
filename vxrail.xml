@@ -13,7 +13,8 @@
   <project path="ansible/roles/ansible" name="ansible-role-ansible" groups="dev" remote="vxrailorg"/>
   <project path="ansible/roles/chaperone" name="ansible-role-chaperone" groups="dev" remote="vxrailorg"/>
   <project path="ansible/roles/nsx" name="ansible-role-nsx" groups="dev" remote="vxrailorg"/>
-
+  <project path="ansible/roles/nsx/files" name="nsxraml.git" groups="dev" remote="vxrailorg" >
+  </project>
   <!-- Modules Chaperone -->
   <project path="ansible/modules/chaperone" name="ansible-module-chaperone" groups="modules,dev" remote="vxrailorg">
     <copyfile src="set_vcsa_sh.py" dest="ansible/library/set_vcsa_sh.py" />

@@ -25,10 +25,6 @@
 
   <!-- nsxansible - the directory structure is for a playbook, we need to modify slightly -->
 
-
-  <project path="ansible/roles/nsx/files" name="nsxraml.git" groups="modules,chaperone" remote="vmwareorg" >
-  </project>
-
   <!-- roles -->
   <!-- build and source infrastructure -->
   <project path="ansible/roles/jenkins" name="ansible-role-jenkins" groups="sdlc" remote="vmwareorg" />
