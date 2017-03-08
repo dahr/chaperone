@@ -15,10 +15,10 @@
   <project path="ansible/roles/vio" name="ansible-role-vio" groups="dev" remote="vxrailorg"/>
 
   <remove-project path="ansible/roles/chaperone" name="ansible-role-chaperone" groups="roles,chaperone" remote="vmwareorg"/>
-  <project path="ansible/roles/chaperone" name="ansible-role-chaperone" groups="dev" remote="vxrail"/>
+  <project path="ansible/roles/chaperone" name="ansible-role-chaperone" groups="dev" remote="vxrailorg"/>
 
   <remove-project path="ansible/roles/vcenter" name="ansible-role-vcenter" groups="roles,chaperone" remote="vmwareorg"/>
-  <project path="ansible/roles/vcenter" name="ansible-role-vcenter" groups="dev" remote="vxrail"/>
+  <project path="ansible/roles/vcenter" name="ansible-role-vcenter" groups="dev" remote="vxrailorg"/>
 
   <remove-project path="ansible/modules/nsx" name="nsxansible.git" groups="modules,chaperone" remote="vmwareorg" />
   <project path="ansible/modules/nsx" name="nsxansible.git" groups="dev" remote="vxrailorg" >
@@ -46,7 +46,7 @@
   <project path="ansible/roles/nsx/files" name="nsxraml.git" groups="dev" remote="vxrail" />
 
   <remove-project path="ansible/modules/extras-gpl3" name="ansible-modules-extras-gpl3" groups="modules,chaperone" remote="vmwareorg">
-  <project path="ansible/modules/extras-gpl3" name="ansible-modules-extras-gpl3" groups="dev" remote="vxrail">
+  <project path="ansible/modules/extras-gpl3" name="ansible-modules-extras-gpl3" groups="dev" remote="vxrailorg">
     <!-- vCenter Modules -->
     <copyfile src="vds.py" dest="ansible/library/vds.py" />
     <copyfile src="vcenter_portgroup.py" dest="ansible/library/vcenter_portgroup.py" />
@@ -86,4 +86,12 @@
     <!-- Misc -->
     <copyfile src="nsx_vds_id.py" dest="ansible/library/nsx_vds_id.py" />
   </project>
+
+  <remove-project path="ansible/modules/chaperone" name="ansible-module-chaperone" groups="modules,chaperone" remote="vmwareorg"/>
+
+  <project path="ansible/modules/chaperone" name="ansible-module-chaperone" groups="dev" remote="vxrailorg">
+    <copyfile src="vcenter_query.py" dest="ansible/library/vcenter_query.py" />
+  </project>
+
+
 </manifest>
