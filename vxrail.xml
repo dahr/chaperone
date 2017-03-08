@@ -90,13 +90,11 @@
     <copyfile src="nsx_vds_id.py" dest="ansible/library/nsx_vds_id.py" />
   </project>
 
-  <remove-project path="ansible/modules/chaperone" name="ansible-module-chaperone" groups="modules,chaperone" remote="vmwareorg"/>
-
+  <!-- Chaperone Modules -->
+  <remove-project path="ansible/modules/chaperone" name="ansible-module-chaperone" groups="modules,chaperone" remote="vmwareorg" />
   <project path="ansible/modules/chaperone" name="ansible-module-chaperone" groups="dev" remote="vxrailorg">
     <copyfile src="vcenter_query.py" dest="ansible/library/vcenter_query.py" />
   </project>
-
-  <project path="containers/vagrant" name="vagrant-chaperone" groups="dev,vagrant" remote="vxrailorg"/>
-
-
+  <!-- Vagrant -->
+  <project path="containers/vagrant" name="vagrant-chaperone" groups="dev,vagrant" remote="vxrailorg" />
 </manifest>
