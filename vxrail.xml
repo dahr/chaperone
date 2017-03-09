@@ -48,6 +48,7 @@
     <copyfile src="library/nsx_redistribution.py" dest="ansible/library/nsx_redistribution.py" />
     <copyfile src="library/psc_load_balancer.py" dest="ansible/library/psc_load_balancer.py" />
     <copyfile src="library/vcd_load_balancer.py" dest="ansible/library/vcd_load_balancer.py" />
+    <copyfile src="library/nsx_edge_firewall.py" dest="ansible/library/nsx_edge_firewall.py" />
   </project>
 
   <!-- Modules vCenter -->
