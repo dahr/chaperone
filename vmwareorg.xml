@@ -47,7 +47,6 @@
   <project path="ansible/roles/registrator" name="ansible-role-registrator" groups="sdlc,roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/repo" name="ansible-role-repo" groups="sdlc,roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/vcsa" name="ansible-role-vcsa" groups="roles,chaperone" remote="vmwareorg"/>
-  <project path="ansible/roles/vrops" name="ansible-role-vrops" groups="roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/vra" name="ansible-role-vra" groups="roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/vrli" name="ansible-role-vrli" groups="roles,chaperone" remote="vmwareorg"/>
   <project path="ansible/roles/vrb" name="ansible-role-vrb" groups="roles,chaperone" remote="vmwareorg"/>

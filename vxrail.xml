@@ -13,6 +13,7 @@
   <project path="ansible/roles/ansible" name="ansible-role-ansible" groups="dev" remote="vxrailorg"/>
   <project path="ansible/roles/chaperone" name="ansible-role-chaperone" groups="dev" remote="vxrailorg"/>
   <project path="ansible/roles/nsx" name="ansible-role-nsx" groups="dev" remote="vxrailorg"/>
+  <project path="ansible/roles/vrops" name="ansible-role-vrops" groups="dev" remote="vxrailorg"/>
   <project path="ansible/roles/nsx/files" name="nsxraml.git" groups="dev" remote="vxrailorg" >
   </project>
   <!-- Modules Chaperone -->
