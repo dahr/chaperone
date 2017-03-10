@@ -31,7 +31,7 @@ install:
 
 script:
   - cd /tmp
-  - echo "y" | repo init -u https://github.com/$TRAVIS_REPO_SLUG -b $TRAVIS_BRANCH -g chaperone
+  - echo "y" | repo init -u https://github.com/$TRAVIS_REPO_SLUG -b $TRAVIS_BRANCH -g dev,base
   - repo sync
   - cd ansible/playbooks/ansible
   - ansible-playbook -i inventory ansible.yml
