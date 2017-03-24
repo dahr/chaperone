@@ -80,7 +80,7 @@
     <copyfile src="vcenter_pg_activeuplinks.py" dest="ansible/library/vcenter_pg_activeuplinks.py" />
     <copyfile src="vcenter_host_profile.py" dest="ansible/library/vcenter_host_profile.py" />
     <copyfile src="os_user.py" dest="ansible/library/os_user.py" />
-    <copyfile src="os_create_project.py" dest="ansible/library/os_create_project.py" />
+    <copyfile src="os_projects.py" dest="ansible/library/os_projects.py" />
     <copyfile src="nsx_vds_id.py" dest="ansible/library/nsx_vds_id.py" />
     <copyfile src="vcenter_add_lag_vds.py" dest="ansible/library/vcenter_add_lag_vds.py" />
     <copyfile src="vcenter_config_host_vds.py" dest="ansible/library/vcenter_config_host_vds.py" />
