@@ -81,6 +81,7 @@
     <copyfile src="os_user.py" dest="ansible/library/os_user.py" />
     <copyfile src="os_projects.py" dest="ansible/library/os_projects.py" />
     <copyfile src="os_check_heat.py" dest="ansible/library/os_check_heat.py" />
+    <copyfile src="os_heat_status.py" dest="ansible/library/os_heat_status.py" />
     <copyfile src="nsx_vds_id.py" dest="ansible/library/nsx_vds_id.py" />
     <copyfile src="vio_cluster_deploy.py" dest="ansible/library/vio_cluster_deploy.py" />
     <copyfile src="vio_unregister_extension.py" dest="ansible/library/vio_unregister_extension.py" />
