@@ -88,7 +88,8 @@ create ssh keys and place them in the default location (~/.ssh/id_rsa) for the v
 
 ### Install Ansible
 Run these commands on the development environment server.
-
+    sudo apt-get -y install libssl-dev
+    sudo apt-get -y install libffi-dev
     sudo apt-get install python-pip
     sudo easy_install pip
     sudo apt-get install python-dev
