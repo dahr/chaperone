@@ -87,7 +87,8 @@ Note: Be aware that the ansible playbooks that setup the DE will
 create ssh keys and place them in the default location (~/.ssh/id_rsa) for the vmware user.
 
 ### Install Ansible
-Run these commands on the development environment server.
+Run these commands on the development environment server:
+
     sudo apt-get -y install libssl-dev
     sudo apt-get -y install libffi-dev
     sudo apt-get install python-pip
